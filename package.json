@@ -1,0 +1,35 @@
+{
+  "name": "markdown-example-to-jsx",
+  "displayName": "Markdown fenced code block example injection",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "nuancheng",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example/issues"
+  },
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "markdown.example.codeblock",
+        "path": "./syntaxes/codeblock.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.example": "javascript"
+        }
+      }
+    ]
+  },
+  "dependencies": {  }
+}
